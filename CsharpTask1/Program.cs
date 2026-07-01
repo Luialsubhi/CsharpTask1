@@ -254,20 +254,49 @@ namespace CsharpTask1
                 default:
                     Console.WriteLine("Invalid operator");
                     break;
-}
+            }
+
+            ////////////////////////////////////////////////
+
+            // task 11 loan eligibility system
             
-   
+
+            Console.WriteLine("Enter your age:");
+            float age2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter your monthly income:");
+            double income = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("you have any existing loans? (yes/no)");
+            string existingLoans = Console.ReadLine();
+            bool hasExistingLoans = (existingLoans == "yes");
+
+            if (age2 >= 21 && age2 <= 60 && income >= 400 && !hasExistingLoans)
+            {
+                Console.WriteLine("You are eligible for a loan.");
+            }
+            else if (age2 < 21 || age2 > 60)
+            {
+                Console.WriteLine("You are not eligible for a loan due to age restrictions.");
+            }
+            else if (income < 400)
+            {
+                Console.WriteLine("You are not eligible for a loan due to insufficient income.");
+            }
+            else if (hasExistingLoans)
+            {
+                Console.WriteLine("You are not eligible for a loan due to existing loans.");
+            }
+            else
+            {
+                Console.WriteLine("You are not eligible for a loan.");
+            }
+
+
+
+
         }
-        
 
-
-
-
-
-
-
-
-        
     }
 }
     
