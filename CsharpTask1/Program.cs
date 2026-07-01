@@ -1,6 +1,8 @@
 ﻿
+using System.ComponentModel.Design;
+
 namespace CsharpTask1
- {
+{
     internal class Program
     {
         static void Main(string[] args)
@@ -33,7 +35,7 @@ namespace CsharpTask1
             //Console.WriteLine("Perimeter:" + Perimeter);
 
             ////////////////////////////////////////////////////////////
-            
+
             ////Even or Odd Checker
 
             //Console.WriteLine("enter a whole number :");
@@ -110,25 +112,55 @@ namespace CsharpTask1
             //}
             /////////////////////////////////////////////////////////////////////////
             ///
-            // task 6
+            //// task 6
 
-            Console.WriteLine("Enter the temperature in Celsius :");
-            float C = float.Parse(Console.ReadLine());
-            float F = (C * 9 / 5) + 32;
-            if (C <= 10)
+            //Console.WriteLine("Enter the temperature in Celsius :");
+            //float C = float.Parse(Console.ReadLine());
+            //float F = (C * 9 / 5) + 32;
+            //if (C <= 10)
+            //{
+            //    Console.WriteLine("It's cold");
+
+            //}
+            //else if (C > 10 && F <= 30)
+            //{
+            //    Console.WriteLine("It's Mild");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("It's hot");
+            //}
+            //Console.WriteLine("The temperature in Fahrenheit is :" + F);
+            ///////////////////////////////////////////////////////
+
+            // task 7
+            Console.WriteLine("enter your age :");
+            int age = int.Parse(Console.ReadLine());
+
+            if (age >= 0 && age <= 12)
             {
-                Console.WriteLine("It's cold");
+                Console.WriteLine("Category: Child");
+                Console.WriteLine("ticket price: 2.000 omr");
 
             }
-            else if (C > 10 && F <= 30)
+            else if (age >= 13 && age <= 59)
             {
-                Console.WriteLine("It's Mild");
+                Console.WriteLine("Category: Adults");
+                Console.WriteLine("ticket price: 5.000 omr");
+            }
+
+        
+            else if (age >= 60)
+            {
+                Console.WriteLine("Category: Senior");
+                Console.WriteLine("ticket price: 3.000 omr");
             }
             else
+
             {
-                Console.WriteLine("It's hot");
+                Console.WriteLine("Invalid age");
+
             }
-            Console.WriteLine("The temperature in Fahrenheit is :" + F);
 
 
 
@@ -138,6 +170,7 @@ namespace CsharpTask1
 
 
 
+
+            }
         }
     }
-}
