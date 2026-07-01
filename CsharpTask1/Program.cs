@@ -162,15 +162,34 @@ namespace CsharpTask1
 
             }
 
+            ///////////////////////////////////////////////////////////////////////
+            ///
+            // task 8
+            Console.WriteLine("enter total bill:");
+            double bill = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("are you a member of the loyalty program? (yes/no)");
+            string member = Console.ReadLine();
 
+            double discount = 0;
 
-
-
-
-
-
-
+            if(bill>20 &&  member== "yes")
+            {
+                discount = bill * 0.15;
             }
+            double finalBill = bill - discount;
+
+            Console.WriteLine("Final bill after discount: " + finalBill);
+            Console.WriteLine("Discount applied: " + discount);
+            Console.WriteLine("original bill: " + bill);
+
+
+
+
+
+
+
+
         }
+    }
     }
