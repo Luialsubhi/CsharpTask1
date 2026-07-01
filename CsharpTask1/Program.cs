@@ -149,7 +149,7 @@ namespace CsharpTask1
                 Console.WriteLine("ticket price: 5.000 omr");
             }
 
-        
+
             else if (age >= 60)
             {
                 Console.WriteLine("Category: Senior");
@@ -173,7 +173,7 @@ namespace CsharpTask1
 
             double discount = 0;
 
-            if(bill>20 &&  member== "yes")
+            if (bill > 20 && member == "yes")
             {
                 discount = bill * 0.15;
             }
@@ -182,14 +182,92 @@ namespace CsharpTask1
             Console.WriteLine("Final bill after discount: " + finalBill);
             Console.WriteLine("Discount applied: " + discount);
             Console.WriteLine("original bill: " + bill);
+            //////////////////////////////////////////////////////////
+            ///
+            // task 9 day name finder
+            Console.WriteLine("Enter a number (1 to 7):");
+            int day = int.Parse(Console.ReadLine());
 
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 6:
+                    Console.WriteLine("Friday");
+                    break;
+                case 7:
+                    Console.WriteLine("Saturday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input. Please enter a number between 1 and 7.");
+                    break;
+            }
 
+            /////////////////////////////////////////////////////////////////////////////
+            ///
+            // task 10 MINI Calculator
+            Console.WriteLine("Enter first number:");
+            double num1 = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("Enter second number:");
+            double num2 = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("Enter an operator (+, -, *, /,%):");
+            char op = Console.ReadLine()[0];
 
-
-
-
+            switch (op)
+            {
+                case '+':
+                    Console.WriteLine("Result: " + (num1 + num2));
+                    break;
+                case '-':
+                    Console.WriteLine("Result: " + (num1 - num2));
+                    break;
+                case '*':
+                    Console.WriteLine("Result: " + (num1 * num2));
+                    break;
+                case '/':
+                    if (num2 != 0)
+                        Console.WriteLine("Result: " + (num1 / num2));
+                    else
+                        Console.WriteLine("Error: Division by zero");
+                    break;
+                case '%':
+                    if (num2 != 0)
+                        Console.WriteLine("Result: " + (num1 % num2));
+                    else
+                        Console.WriteLine("Error: Division by zero");
+                    break;
+                default:
+                    Console.WriteLine("Invalid operator");
+                    break;
+}
+            
+   
         }
+        
+
+
+
+
+
+
+
+
+        
     }
-    }
+}
+    
