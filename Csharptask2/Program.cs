@@ -1,4 +1,6 @@
-﻿namespace task2
+﻿using System.ComponentModel;
+
+namespace task2
 {
     internal class Program
     {
@@ -41,6 +43,29 @@
                 Console.WriteLine(num + " x " + i + " = " + (num * i));
             }
             /////////////////////////////////////////////////////////////////////
+
+            // Password Retry
+            string password = "1234";
+            string userInput="";
+            while (userInput != password)
+            { 
+                Console.WriteLine("enter your password");
+                userInput = Console.ReadLine();
+                if (userInput != password)
+                {
+                    Console.WriteLine("wrong password, try again");
+                }
+                else
+                {
+                    Console.WriteLine("correct");
+
+                }
+
+            }
+            ////////////////////////////////////////////////////////////////
+            
+
+            
             
 
         }
