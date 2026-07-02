@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../task2/task2.csproj" Id="1b45ea18-d691-4f56-b51d-35d500b8010a" />
   <Project Path="CsharpSession2/CsharpSession2.csproj" Id="1ee3eec5-5642-44c7-ad53-6b6cf5baf22a" />
   <Project Path="CsharpTask1/CsharpTask1.csproj" />
+  <Project Path="Csharptask2/Csharptask2.csproj" Id="53ad643f-4d5e-4c61-963b-b56852bf229a" />
 </Solution>
