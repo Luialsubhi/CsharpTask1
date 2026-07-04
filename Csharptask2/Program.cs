@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Runtime.Versioning;
 
 namespace task2
@@ -161,18 +162,28 @@ namespace task2
                  
                
                 for (int k = 0; k <= number; k++)
-                {
-                    if (k % 2 == 0) ;
-                    {
-                        sum3 += k;
 
-                    }
-                    Console.WriteLine("sum of even numbers from 1 to " + number + " is: " + sum3);
-                }
+                {
                 
+                if (number% 2 != 0) ;
+                    {
+                       Console.WriteLine("the number is odd");
+
+                }
+                if (number % 2 == 0)
+                {
+                    sum3 += k;
+                }
+
+
+                Console.WriteLine("sum of even numbers from 1 to " + number + " is: " + sum3);
+                }
+
             ////////////////////////////////////////////////////////////////////////////
             ///
+            // vaildated positive number inpt 
 
+            Console.WriteLine("enter the whil postive number :");
             }
 
 
