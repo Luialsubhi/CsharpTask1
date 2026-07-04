@@ -155,36 +155,60 @@ namespace task2
                 ///////////////////////////////////////////////////////////////////
                 ///
                 // Sum Even numper only
-                Console.WriteLine("enter a whole number :");
-                int number = int.Parse(Console.ReadLine());
+                //Console.WriteLine("enter a whole number :");
+                //int number = int.Parse(Console.ReadLine());
 
-                int sum3 = 0;
+                //int sum3 = 0;
                  
                
-                for (int k = 0; k <= number; k++)
+                //for (int k = 0; k <= number; k++)
 
-                {
+                //{
                 
-                if (number% 2 != 0) ;
-                    {
-                       Console.WriteLine("the number is odd");
+                //if (number% 2 != 0) ;
+                //    {
+                //       Console.WriteLine("the number is odd");
 
-                }
-                if (number % 2 == 0)
-                {
-                    sum3 += k;
-                }
+                //}
+                //if (number % 2 == 0)
+                //{
+                //    sum3 += k;
+                //}
 
 
-                Console.WriteLine("sum of even numbers from 1 to " + number + " is: " + sum3);
-                }
+                //Console.WriteLine("sum of even numbers from 1 to " + number + " is: " + sum3);
+                //}
 
             ////////////////////////////////////////////////////////////////////////////
             ///
             // vaildated positive number inpt 
 
             Console.WriteLine("enter the whil postive number :");
+            int positiveNumber2 = int.Parse(Console.ReadLine());
+
+            int sum4= 0;
+      
+            do
+            {
+                if (positiveNumber2 > 0 && positiveNumber2 % 2 != 0) ;
+                {
+                    Console.WriteLine("invalid input, please enter a positive number :");
+                    positiveNumber2 = int.Parse(Console.ReadLine());
+                }
+            } while (positiveNumber2 > 0 && positiveNumber2 % 2 != 0);
+            {
+                for (int i = 0; i <= positiveNumber2; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        sum4 += i;
+                    }
+                }
+                sum4 += positiveNumber2;
             }
+            Console.WriteLine("sum of positive numbers is: " + sum4);
+            //////////////////////////////////////////////////////////////////////
+        }
 
 
         }
