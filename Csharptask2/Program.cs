@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.Versioning;
 
 namespace task2
 {
@@ -92,67 +93,89 @@ namespace task2
             //}
             ////////////////////////////////////////////////////////////
 
-            //Safe Division Calculator
-            Console.WriteLine("enter the frist numper");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            ////Safe Division Calculator
+            //Console.WriteLine("enter the frist numper");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("enter the second number");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("enter the second number");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
 
-            for (int i = 0; i < 1; i++)
-            {
-                if (num2 == 0)
-                {
-                    Console.WriteLine("Error: Division by zero is not allowed.");
-                }
-                else
-                {
-                    double result = num1 / num2;
-                    Console.WriteLine("Result: " + result);
-                }
-                /////////////////////////////////////////////////////////////////////////////////
+            //for (int i = 0; i < 1; i++)
+            //{
+            //    if (num2 == 0)
+            //    {
+            //        Console.WriteLine("Error: Division by zero is not allowed.");
+            //    }
+            //    else
+            //    {
+            //        double result = num1 / num2;
+            //        Console.WriteLine("Result: " + result);
+            //    }
+            //    /////////////////////////////////////////////////////////////////////////////////
 
-                //Repeating Menu with Exit Option
+            //    //Repeating Menu with Exit Option
 
-                bool exit = false;
+            //    bool exit = false;
 
-                while (exit)
-                {
-                    Console.WriteLine("Menu:");
-                    Console.WriteLine("1. Option 1");
-                    Console.WriteLine("2. Option 2");
-                    Console.WriteLine("3. Option 3");
-                    Console.WriteLine("chose tne one optine ");
+            //    while (exit)
+            //    {
+            //        Console.WriteLine("Menu:");
+            //        Console.WriteLine("1. Option 1");
+            //        Console.WriteLine("2. Option 2");
+            //        Console.WriteLine("3. Option 3");
+            //        Console.WriteLine("chose tne one optine ");
 
-                }
-                try
-                {
-                    Console.WriteLine("enter your choice");
-                    int choice = Convert.ToInt32(Console.ReadLine());
-                    switch (choice)
-                    {
-                        case 1:
-                            Console.WriteLine("you chose option 1");
-                            break;
-                        case 2:
-                            Console.WriteLine("you chose option 2");
-                            break;
-                        case 3:
-                            Console.WriteLine("you chose option 3");
-                            break;
-                        default:
-                            Console.WriteLine("invalid choice, please try again.");
-                            break;
-                    }
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Invalid input. Please enter a valid number.");
+            //    }
+            //    try
+            //    {
+            //        Console.WriteLine("enter your choice");
+            //        int choice = Convert.ToInt32(Console.ReadLine());
+            //        switch (choice)
+            //        {
+            //            case 1:
+            //                Console.WriteLine("you chose option 1");
+            //                break;
+            //            case 2:
+            //                Console.WriteLine("you chose option 2");
+            //                break;
+            //            case 3:
+            //                Console.WriteLine("you chose option 3");
+            //                break;
+            //            default:
+            //                Console.WriteLine("invalid choice, please try again.");
+            //                break;
+            //        }
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.WriteLine("Invalid input. Please enter a valid number.");
 
-                } 
+            //    }
                 ///////////////////////////////////////////////////////////////////
+                ///
+                // Sum Even numper only
+                Console.WriteLine("enter a whole number :");
+                int number = int.Parse(Console.ReadLine());
+
+                int sum3 = 0;
+                 
+               
+                for (int k = 0; k <= number; k++)
+                {
+                    if (k % 2 == 0) ;
+                    {
+                        sum3 += k;
+
+                    }
+                    Console.WriteLine("sum of even numbers from 1 to " + number + " is: " + sum3);
+                }
+                
+            ////////////////////////////////////////////////////////////////////////////
+            ///
+
             }
+
 
         }
     }
-}
+
